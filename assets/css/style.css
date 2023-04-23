@@ -27,12 +27,22 @@ body::before {
   z-index: -1;
 }
 
-@media (min-width: 1024px) {
+@media only screen and (max-width: 768px) {
+  /* Replace background image */
+  body {
+    background-image: url('../img/bg1.jpg"');
+  }
+}
+
+
+
+
+/* @media (min-width: 1024px) {
   body::before {
     background-attachment: fixed;
   }
 }
-
+ */
 a {
   color: #18d26e;
   text-decoration: none;
